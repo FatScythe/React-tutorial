@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import Prop from "./Prop-types";
+import Setup from "./memo-useCallback-useMemo";
+// import Booklist from "./components/Booklist";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Setup />
+
+      {/* <h1>Hi my name is Fahm and this is like my 60th component</h1>
+      <Code />
+      <Booklist /> */}
     </div>
   );
-}
+};
+
+// const Code = () => <p>Hello World!!!</p>;
+
+// JSX
+// const App = () => {
+//     return (
+//         React.createElement('div',
+//         {},
+//         React.createElement('h1', {}, 'Hi my name is Fahm and this is like my 60th component')
+//         )
+//     );
+// }
 
 export default App;
